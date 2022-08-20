@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block base %}
+
+<br></br><br><br><br>
+<div style="padding: 20">Hi <strong>{{data.user_name}}</strong>, you will receive an confirmation on your mail id <strong>{{data.email_id}}</strong>. Please check and do the needful. 
+</br><br>
+
+
+<h5 align="center"><a href="{% url 'ProjectHomePage' %}"> Click here to go to Homepage!</a></h5>
+<br><br></br><br><br><br>
+
+{% endblock base %}

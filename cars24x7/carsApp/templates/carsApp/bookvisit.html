@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block base %}
+
+<div style="padding: 20; border: 1px solid;">
+<form action="{% url 'carsApp:name_visitconf' %}" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="user_name">Full Name</label></br>
+        <input type="text" name="user_name" id="user_name" placeholder="Please Enter your full Name!" required>
+      </div>
+</br>
+    <div>
+      <label for="email_id">Email ID</label></br>
+      <input type="email" id="email_id" name="email_id" placeholder="Enter email with @ sign" required>
+    </div>
+</br>
+</br>
+<div>
+  <label for="mobile_no">Mobile Number</label></br>
+  <input type="number" id="mobile_no" name="mobile_no"  required>
+</div>
+</br>
+</br>
+<div>
+  <label for="visit_date">Appointment Date</label></br>
+  <input type="datetime-local" id="visit_date" name="visit_date" required>
+</div>
+</br>
+    <button type="submit" value="Confirm Details!">Confirm</button>
+  </form>
+</div>
+
+
+{% endblock base %}

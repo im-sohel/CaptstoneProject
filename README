@@ -1,0 +1,11 @@
+Microservice:
+
+Cars24x7
+Insurance3rdParty
+Technology used: Python Django, HTML/JS/CSS
+
+Notes:
+
+Rename the .env-example file to .env. Here all the environment variables are mentioned.
+For the SECRET_KEY variable under .env file, use any online secrect key generator for Django
+As Django is using the default sqlite3 database in case any other database we want to use edit the database section under .env file.

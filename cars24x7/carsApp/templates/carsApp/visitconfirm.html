@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block base %}
+
+<br></br><br><br><br>
+<div style="padding: 20">Hi <strong>{{data.user_name}}</strong>, you have successfully booked your visit, on <strong>{{data.visit_date}}</strong>. Lets meet and discuss about you new car booking/Insurance.
+</br><br>
+
+
+<h5 align="center"><a href="{% url 'ProjectHomePage' %}"> Click here to go to Homepage!</a></h5>
+<br><br></br><br><br><br>
+
+{% endblock base %}
